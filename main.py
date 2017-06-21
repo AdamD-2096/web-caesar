@@ -10,6 +10,9 @@ form ='''
 <html>
     <head>
         <style>
+            .text {{
+                text-align: center;
+            }}
             form {{
                 background-color: #eee;
                 padding: 20px;
@@ -26,12 +29,16 @@ form ='''
         </style>
     </head>
     <body>
+        <h1 class="text">Caesar Encryption</h1>
+        <p class="text">just enter a number in the first box. <br/> 
+        Then add your text in the second, push the encrypt button<br/>
+        and voilá. Now the text is encrypted via caesar encryption</p>
       <form method="POST">
         <label>Rotate by
         <input type="text" name="rot" value="0"/>
         <label/>
         <textarea name="text">{0}</textarea>
-        <input type="submit"/>
+        <input type="submit" value="encrypt"/>
       </form>
     </body>
 </html>
